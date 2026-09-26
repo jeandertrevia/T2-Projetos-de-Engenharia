@@ -58,4 +58,4 @@ Descreva também o que foi implementado, como reproduzir a demonstração, limit
 
 ## Prazo e formato
 
-O PDF da disciplina indica **30/09** para a Entrega 2 (parte técnica rodando e versionada) e **30/10** para a Entrega 3 (documento final por e-mail). Este repositório orienta a submissão do projeto por PR; confirme com o professor se o PR substitui também o envio por e-mail do documento final.
+Dia **30/09** para a Entrega (parte técnica rodando e versionada) 
