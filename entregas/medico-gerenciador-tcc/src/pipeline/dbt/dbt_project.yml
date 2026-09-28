@@ -1,0 +1,32 @@
+name: pipeline_tcc
+version: "1.0.0"
+config-version: 2
+
+profile: pipeline_tcc
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+seeds:
+  pipeline_tcc:
+    +schema: ouro
+
+models:
+  pipeline_tcc:
+    staging:
+      +materialized: view
+      +schema: bronze
+    qualidade:
+      +materialized: table
+      +schema: qualidade
+    intermediate:
+      +materialized: view
+      +schema: prata
+    prata:
+      +materialized: table
+      +schema: prata
+    ouro:
+      +materialized: table
+      +schema: ouro
